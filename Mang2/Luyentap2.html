@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 2</title>
+</head>
+<body>
+<script>
+    //Bai1
+    // let arr = [
+    //     [1, 2, 1, 24],
+    //     [8, 11, 9, 4],
+    //     [7, 0, 7, 27],
+    //     [7, 4, 28, 14],
+    //     [3, 10, 26, 7]
+    // ]
+    // for (let i = 0; i < arr.length; i++) {
+    //     document.write("Rows: " + (i + 1) + "<br>")
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         document.write("\"" + arr[i][j] + "\" <br>")
+    //     }
+    //
+    //     document.write("<br>")
+    // }
+
+    //bai2
+    // let mang = [1,5,"a","c","d",6,7,"z","w",10,"213"]
+    //     let trunggian
+    //     document.write("Mảng = ["+mang+"]<br>")
+    //     for (let i=0; i<Math.floor((mang.length)/2);i++){
+    //         for (let j = Math.ceil((mang.length)/2); j<(mang.length);j++){
+    //             trunggian = mang[i]
+    //             mang[i] = mang[j]
+    //             mang[j] = trunggian
+    //         }
+    //     }
+    //     document.write("Mảng đổi chiều = ["+mang+"]")
+
+
+    //Bai3
+   // let input = prompt("Nhập vào số lượng phần tử trong mảng: ");
+   //  let array = [];
+   //  for (let i = 0; i < +input; i++) {
+   //      array[i] = prompt(`Nhập vào phần tử thứ ${i + 1} :`);
+   //  }
+   //  let cout = 0;
+   //  for (let value of array) {
+   //      if (isNaN(value) === false) {
+   //          cout++
+   //      }
+   //  }
+   //  console.log(array);
+   //  console.log(cout);
+
+    //Bai4
+    //  let srt = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    //
+    // let arr = srt.split(' ');
+    // console.log(arr)
+    // console.log(arr.length)
+
+    //Bai5
+    // let input = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    // let number1 = [];
+    // for (let i = 0; i < +input; i++) {
+    //     number1[i] = prompt(`Nhập vào phần tử thứ ${i + 1} :`);
+    // }
+    // let input1 = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    // let number2 = [];
+    // for (let j = 0; j < +input1; j++) {
+    //     number2[j] = prompt(`Nhập vào phần tử thứ ${j + 1} :`);
+    // }
+
+    // let number1 = [-3, 2, 1, 'a', 2, 40, -8, 50, 20, 30];
+    // let number2 = [-3, 2, 1, 'a', 2, 40, -8, 50, 20, 30];
+    // let flag = false;
+    // for (let i = 0; i < number1.length; i++) {
+    //     if (number1[i] === number2[i]) {
+    //         flag = true;
+    //     } else {
+    //         flag = false;
+    //         break
+    //     }
+    // }
+    //
+    // if (flag) {
+    //     alert('2 mang giống nhau')
+    // } else {
+    //     alert('2 mảng khác nhau')
+    // }
+
+    //Bai6
+    let input = prompt("Nhập vào số lượng phần tử trong mảng: ");
+    let array = [];
+    for (let i = 0; i < +input; i++) {
+        array[i] = prompt(`Nhập vào phần tử thứ ${i + 1} :`);
+    }
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        let b = []
+        for (let j = 0; j < array[i].length; j++) {
+            if (array[i][j] === "-") {
+                b.push("_")
+            } else {
+                b.push(a[i][j])
+            }
+        }
+        result.push(b.join())
+    }
+    console.log(result)
+</script>
+</body>
+</html>

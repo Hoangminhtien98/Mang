@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Bat dau" onclick="hienthi()">
+<p id="carogame">CỜ CARO</p>
+<input type="button" value="Change Value" onclick="changeValue()">
+<script>
+    let board = [];
+    for (let i = 0; i < 5; i++) {
+        board[i] = new Array(0, 0, 0, 0, 0);
+    }
+
+    function hienthi() {
+        let data = "";
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                data = data + board[i][j] + " ";
+            }
+            data += "<br>";
+        }
+        document.getElementById("carogame").innerHTML = data;
+    }
+
+    function changeValue() {
+        let positionX = +prompt("X: ", 0);
+        let positionY = +prompt("Y: ", 0);
+        board[positionX][positionY] = "x";
+        hienthi();
+
+    }
+</script>
+</body>
+</html>
